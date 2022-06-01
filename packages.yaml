@@ -1,13 +1,27 @@
 ---
+# In the next section we add common packages
+# names to all distros
 common:
   - wget
+  - podman
+  - buildah
+  - skopeo
+  - runc
+  # - cri-o
 
+# In the next 2 sections we add the packages
+# common to the distros but different between
+# each package manager
 yum:
   - createrepo
 
 apt:
   - dpkg-dev
 
+#
+# In the next 3 items we add all the packages
+# with different names between distributions.
+#
 centos:
   - centos-release
 
