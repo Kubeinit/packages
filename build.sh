@@ -54,6 +54,8 @@ echo "deb [trusted=yes] https://packages.kubeinit.org/ubuntu/amd64 jammy/" > ./u
 
 echo "deb [trusted=yes] https://packages.kubeinit.org/debian/amd64 bullseye/" > ./debian-bullseye-kubeinit.list
 
+echo "deb [trusted=yes] https://packages.kubeinit.org/debian/amd64 bookworm/" > ./debian-bookworm-kubeinit.list
+
 echo "packages.kubeinit.org" > ./CNAME
 
 cat << EOF > ./index.html
