@@ -1,7 +1,7 @@
 FROM debian:bullseye-slim as bullseye
 ARG OS_VERSION=bullseye
 ARG ARCH=amd64
-ARG BUILD_TOOLS="jq apt-transport-https ca-certificates curl aptitude dpkg-dev"
+ARG BUILD_TOOLS="jq curl dpkg-dev"
 
 RUN apt update -y -q && apt install -y $BUILD_TOOLS
 
