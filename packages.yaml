@@ -1,35 +1,12 @@
 ---
 common:
-  - vim
-  - tcpdump
-  - sshpass
-  - rsync
-  - curl
   - wget
-  - tree
-  - socat
-  - unzip
-  - bash-completion
-  - openssl
 
 yum:
-  - nfs-utils
-  - yum-utils
   - createrepo
-  - epel-release
-  - containerd.io
-  - centos-release-gluster
 
 apt:
-  - nfs-common
-  - apt-transport-https
-  - ca-certificates
-  - gnupg
-  - lsb-release
-  - software-properties-common
-  - aptitude
   - dpkg-dev
-  - gnupg2
 
 centos:
   - centos-release

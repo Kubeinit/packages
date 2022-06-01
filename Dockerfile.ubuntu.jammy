@@ -1,0 +1,26 @@
+FROM ubuntu:jammy as jammy
+ARG OS_VERSION=jammy
+ARG ARCH=amd64
+ARG BUILD_TOOLS="jq apt-transport-https ca-certificates curl aptitude dpkg-dev"
+
+RUN apt update -y -q && apt install -y $BUILD_TOOLS
+
+WORKDIR /ubuntu/${OS_VERSION}
+
+RUN curl -sL -o /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/v4.25.2/yq_linux_amd64 \
+    && chmod a+x /usr/local/bin/yq
+
+COPY packages.yaml packages.yaml
+
+RUN yq eval packages.yaml -j | jq -r '.common[],.apt[],.ubuntu[]' | sort -u > packages.list \
+    && dpkg --get-selections | grep -v deinstall | cut -f1 >> packages.list
+
+RUN chown -R _apt /ubuntu/$OS_VERSION \
+    && cat packages.list | xargs -L1 -I {} apt-cache depends --recurse --no-recommends --no-suggests \
+    --no-conflicts --no-breaks --no-replaces --no-enhances {}  | grep '^\w' | sort -u | xargs apt-get download
+
+RUN cd ../ && dpkg-scanpackages $OS_VERSION | gzip -9c > $OS_VERSION/Packages.gz
+
+FROM scratch
+
+COPY --from=jammy /ubuntu /ubuntu
