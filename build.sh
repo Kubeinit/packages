@@ -9,8 +9,10 @@ ls Dockerfile.* | xargs -L1 grep 'COPY --from=' >> Dockerfile
 # Export build artifact to local path
 DOCKER_BUILDKIT=1 docker build -o type=local,dest=$PWD -f Dockerfile .
 
-git clone https://github.com/kubeinit/packages.git --branch site --single-branch site
-cd site
+# This is if we would like to push to this same repo but in another branch
+# git clone https://github.com/kubeinit/repobuilder.git --branch site --single-branch packages
+git clone https://github.com/kubeinit/packages.git --branch main --single-branch packages
+cd packages
 
 git reflog expire --expire-unreachable=now --all
 git gc --prune=now

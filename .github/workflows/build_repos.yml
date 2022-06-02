@@ -28,7 +28,18 @@ jobs:
         if: github.event_name == 'push'
         uses: kubeinit/github-push-action@master
         with:
+          repository: kubeinit/packages
           force: true
-          branch: site
-          directory: site
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          directory: packages
+          github_token: ${{ secrets.PUSHKEY }}
+
+      # Same repo, different folder/branch
+      # - name: Push changes
+      #   if: github.event_name == 'push'
+      #   uses: kubeinit/github-push-action@master
+      #   with:
+      #     force: true
+      #     branch: site
+      #     directory: site
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
