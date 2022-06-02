@@ -34,6 +34,8 @@ then
     cp -a ../centos .
 fi
 
+cp ../index.html .
+
 cat << EOF > ./fedora-kubeinit.repo
 [kubeinit]
 name=kubeinit
@@ -52,19 +54,15 @@ gpgcheck=0
 sslverify=0
 EOF
 
-echo "deb [trusted=yes] https://packages.kubeinit.org/ubuntu/amd64 focal/" > ./ubuntu-focal-kubeinit.list
+echo "deb [trusted=yes] https://packages.kubeinit.org/ubuntu/focal/os/amd64 /" > ./ubuntu-focal-kubeinit.list
 
-echo "deb [trusted=yes] https://packages.kubeinit.org/ubuntu/amd64 jammy/" > ./ubuntu-jammy-kubeinit.list
+echo "deb [trusted=yes] https://packages.kubeinit.org/ubuntu/jammy/os/amd64 /" > ./ubuntu-jammy-kubeinit.list
 
-echo "deb [trusted=yes] https://packages.kubeinit.org/debian/amd64 bullseye/" > ./debian-bullseye-kubeinit.list
+echo "deb [trusted=yes] https://packages.kubeinit.org/debian/bullseye/os/amd64 /" > ./debian-bullseye-kubeinit.list
 
-echo "deb [trusted=yes] https://packages.kubeinit.org/debian/amd64 bookworm/" > ./debian-bookworm-kubeinit.list
+echo "deb [trusted=yes] https://packages.kubeinit.org/debian/bookworm/os/amd64 /" > ./debian-bookworm-kubeinit.list
 
 echo "packages.kubeinit.org" > ./CNAME
-
-cat << EOF > ./index.html
-This is an index.html page, nothing to show.
-EOF
 
 git config --local user.email "bot@kubeinit.org"
 git config --local user.name "KubeInit's bot"

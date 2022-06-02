@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Kubeinit - Repopage</title>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+      <style>
+         @import url(https://fonts.googleapis.com/css?family=Lato:300,900);
+         body{
+         font-family: Lato;
+         background: #F94F4F;
+         height: 1000px;
+         }
+         p.title{
+         text-align: center;
+         font-size: 40px;
+         color: #FFFFFF;
+         }
+         b{
+         color: #FFFFFF;
+         font-size: 55px;
+         }
+         p.remarks, a{
+         text-align: center;
+         /*margin-top: 100px;*/
+         font-weight: bold;
+         color: #FFFFFF;
+         font-size: 15px;
+         }
+         .container{
+         width: 100%;
+         max-width: 1100px;
+         min-width: 900px;
+         margin: 0 auto;
+         padding: 0 5vh;
+         }
+         /* accordion-1 */
+         #accordion-1{
+         position: relative;
+         box-shadow: 0px 1px 7px #DBDBDB;
+         }
+         #accordion-1 .head{
+         background-color: #FFFFFF;
+         color: #000000;
+         padding: 20px 30px;
+         cursor: pointer;
+         transition: 0.2s ease;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         }
+         #accordion-1 .arrow{
+         color: #F94F4F;
+         font-size: 60px;
+         transition: 0.25s ease;
+         opacity: 0.3;
+         transform: rotate(-90deg);
+         }
+         #accordion-1 .head:hover .arrow{
+         opacity: 1;
+         }
+         #accordion-1 .head:hover, #accordion-1 .active{
+         background-color: #FFE77AFF;
+         }
+         #accordion-1 .arrow-animate{
+         transform: rotate(0deg);
+         opacity: 1;
+         }
+         #accordion-1 .content{
+         background-color: #FFFFFF;
+         display: none;
+         padding: 20px 30px;
+         color: #333333;
+         }
+         /* accordion-2 */
+         #accordion-2{
+         position: relative;
+         box-shadow: 0px 1px 7px #DBDBDB;
+         }
+         #accordion-2 .head{
+         background-color: #FFFFFF;
+         color: #000000;
+         padding: 20px 30px;
+         cursor: pointer;
+         transition: 0.2s ease;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         }
+         #accordion-2 .arrow{
+         color: #F94F4F;
+         font-size: 60px;
+         transition: 0.25s ease;
+         opacity: 0.3;
+         transform: rotate(-90deg);
+         }
+         #accordion-2 .head:hover .arrow{
+         opacity: 1;
+         }
+         #accordion-2 .head:hover, #accordion-2 .active{
+         background-color: #FFE77AFF;
+         }
+         #accordion-2 .arrow-animate{
+         transform: rotate(0deg);
+         opacity: 1;
+         }
+         #accordion-2 .content{
+         background-color: #FFFFFF;
+         display: none;
+         padding: 20px 30px;
+         color: #333333;
+         }
+         /* accordion-3 */
+         #accordion-3{
+         position: relative;
+         box-shadow: 0px 1px 7px #DBDBDB;
+         }
+         #accordion-3 .head{
+         background-color: #FFFFFF;
+         color: #000000;
+         padding: 20px 30px;
+         cursor: pointer;
+         transition: 0.2s ease;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         }
+         #accordion-3 .arrow{
+         color: #F94F4F;
+         font-size: 60px;
+         transition: 0.25s ease;
+         opacity: 0.3;
+         transform: rotate(-90deg);
+         }
+         #accordion-3 .head:hover .arrow{
+         opacity: 1;
+         }
+         #accordion-3 .head:hover, #accordion-3 .active{
+         background-color: #FFE77AFF;
+         }
+         #accordion-3 .arrow-animate{
+         transform: rotate(0deg);
+         opacity: 1;
+         }
+         #accordion-3 .content{
+         background-color: #FFFFFF;
+         display: none;
+         padding: 20px 30px;
+         color: #333333;
+         }
+         /* accordion-4 */
+         #accordion-4{
+         position: relative;
+         box-shadow: 0px 1px 7px #DBDBDB;
+         }
+         #accordion-4 .head{
+         background-color: #FFFFFF;
+         color: #000000;
+         padding: 20px 30px;
+         cursor: pointer;
+         transition: 0.2s ease;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         }
+         #accordion-4 .arrow{
+         color: #F94F4F;
+         font-size: 60px;
+         transition: 0.25s ease;
+         opacity: 0.3;
+         transform: rotate(-90deg);
+         }
+         #accordion-4 .head:hover .arrow{
+         opacity: 1;
+         }
+         #accordion-4 .head:hover, #accordion-4 .active{
+         background-color: #FFE77AFF;
+         }
+         #accordion-4 .arrow-animate{
+         transform: rotate(0deg);
+         opacity: 1;
+         }
+         #accordion-4 .content{
+         background-color: #FFFFFF;
+         display: none;
+         padding: 20px 30px;
+         color: #333333;
+         }
+      </style>
+   </head>
+   <body>
+      <p class="title"><b>Kubeinit</b> ｜ Containers repository index</p>
+      <p class="remarks">This page contains the instructions for adding the main container dependencies in any Kubeinit deployment.</p>
+      <div class="container">
+         <div id="accordion-1">
+            <div class="head">
+               <h2>Debian</h2>
+               <i class="fas fa-angle-down arrow"></i>
+            </div>
+            <div class="content">
+               <p>Depending on your version, run:</p>
+               <ul>
+                  <li>Debian 11</li>
+<pre><code>
+sed -i '1s#^#deb [trusted=yes] https://packages.kubeinit.org/debian/bullseye/os/amd64 /\n#' /etc/apt/sources.list
+</code></pre>
+                  <li>Debian 12</li>
+<pre><code>
+sed -i '1s#^#deb [trusted=yes] https://packages.kubeinit.org/debian/bookworm/os/amd64 /\n#' /etc/apt/sources.list
+</code></pre>
+               </ul>
+            </div>
+         </div>
+         <br>
+         <div id="accordion-2">
+            <div class="head">
+               <h2>Ubuntu</h2>
+               <i class="fas fa-angle-down arrow"></i>
+            </div>
+            <div class="content">
+               <p>Depending on your version, run:</p>
+               <ul>
+                  <li>Ubuntu 20.04 focal</li>
+<pre><code>
+sed -i '1s#^#deb [trusted=yes] https://packages.kubeinit.org/ubuntu/focal/os/amd64 /\n#' /etc/apt/sources.list
+</code></pre>
+                  <li>Ubuntu 22.04 Jammy</li>
+<pre><code>
+sed -i '1s#^#deb [trusted=yes] https://packages.kubeinit.org/ubuntu/jammy/os/amd64 /\n#' /etc/apt/sources.list
+</code></pre>
+               </ul>
+            </div>
+         </div>
+         <br>
+         <div id="accordion-3">
+            <div class="head">
+               <h2>CentOS Stream</h2>
+               <i class="fas fa-angle-down arrow"></i>
+            </div>
+            <div class="content">
+               <p>Depending on your version, run:</p>
+               <ul>
+                  <li>CentOS Stream</li>
+<pre><code>
+cat << EOF > /etc/yum.repo.d/fedora-kubeinit.repo
+[kubeinit]
+name=kubeinit
+baseurl=https://packages.kubeinit.org/fedora/$releasever/os/$basearch/
+enabled=1
+gpgcheck=0
+sslverify=0
+EOF
+</code></pre>
+               </ul>
+            </div>
+         </div>
+         <br>
+         <div id="accordion-4">
+            <div class="head">
+               <h2>Fedora</h2>
+               <i class="fas fa-angle-down arrow"></i>
+            </div>
+            <div class="content">
+               <p>Depending on your version, run:</p>
+               <ul>
+                  <li>Fedora</li>
+<pre><code>
+cat << EOF > /etc/yum.repo.d/centos-kubeinit.repo
+[kubeinit]
+name=kubeinit
+baseurl=https://packages.kubeinit.org/centos/$releasever/os/$basearch/
+enabled=1
+gpgcheck=0
+sslverify=0
+EOF
+</code></pre>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+         $('.head').click(function(){
+           $(this).toggleClass('active');
+           $(this).parent().find('.arrow').toggleClass('arrow-animate');
+           $(this).parent().find('.content').slideToggle(280);
+         });
+      </script>
+   </body>
+</html>
