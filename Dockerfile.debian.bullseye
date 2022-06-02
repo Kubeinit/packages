@@ -12,8 +12,7 @@ RUN curl -sL -o /usr/local/bin/yq https://github.com/mikefarah/yq/releases/downl
 
 COPY packages.yaml packages.yaml
 
-RUN yq eval packages.yaml -j | jq -r '.common[],.apt[],.debian[]' | sort -u > packages.list \
-    && dpkg --get-selections | grep -v deinstall | cut -f1 >> packages.list
+RUN yq eval packages.yaml -j | jq -r '.common[],.apt[],.debian[]' | sort -u > packages.list #  && dpkg --get-selections | grep -v deinstall | cut -f1 >> packages.list
 
 RUN chown -R _apt /debian/$OS_VERSION \
     && cat packages.list | xargs -L1 -I {} apt-cache depends --recurse --no-recommends --no-suggests \

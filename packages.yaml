@@ -1,17 +1,16 @@
 ---
+#
 # In the next section we add common packages
 # names to all distros
+#
 common:
   - wget
-  - podman
-  - buildah
-  - skopeo
-  - runc
-  # - cri-o
 
+#
 # In the next 2 sections we add the packages
 # common to the distros but different between
 # each package manager
+#
 yum:
   - createrepo
 
@@ -19,7 +18,7 @@ apt:
   - dpkg-dev
 
 #
-# In the next 3 items we add all the packages
+# In the next items we add all the packages
 # with different names between distributions.
 #
 centos:
@@ -30,3 +29,42 @@ debian:
 
 ubuntu:
   - ubuntu-dev-tools
+
+fedora:
+  - fedora-release
+
+#
+# Custom packages building
+#
+custom_packages:
+  - name: podman
+    type: binary
+    version: v4.1.0
+    url: https://github.com/containers/podman/archive/refs/tags/
+    file: v4.1.0.tar.gz
+  - name: buildah
+    type: source
+    version: v1.26.1
+    url: https://github.com/containers/buildah/archive/refs/tags/
+    file: v1.26.1.tar.gz
+  - name: skopeo
+    type: source
+    version: v1.8.0
+    url: https://github.com/containers/skopeo/archive/refs/tags/
+    file: v1.8.0.tar.gz
+  - name: cri-o
+    type: binary
+    version: v1.22.3
+    url: https://storage.googleapis.com/cri-o/artifacts/
+    file: cri-o.amd64.e06068142f46a70b30a4b1af3846dc05801e4295.tar.gz
+  # cri-o already comes with conmon, crictl, crio, crun
+  # - name: runc
+  #   type: source
+  #   version: v1.1.2
+  #   url: https://github.com/opencontainers/runc/archive/refs/tags/
+  #   file: v1.1.2.tar.gz
+  # - name: conmon
+  #   type: source
+  #   version: v2.1.1
+  #   url: https://github.com/containers/conmon/archive/refs/tags/
+  #   file: v2.1.1.tar.gz

@@ -21,28 +21,32 @@ if [[ -d "../ubuntu" ]]
 then
     cp -a ../ubuntu .
 fi
-if [[ -d "../centos" ]]
-then
-    cp -a ../centos .
-fi
 if [[ -d "../debian" ]]
 then
     cp -a ../debian .
 fi
-
-cat << EOF > ./centos-kubeinit.repo
-[kubeinit]
-name=kubeinit
-baseurl=https://packages.kubeinit.org/centos/$releasever/os/$basearch/
-enabled=1
-gpgcheck=0
-sslverify=0
-EOF
+if [[ -d "../fedora" ]]
+then
+    cp -a ../fedora .
+fi
+if [[ -d "../centos" ]]
+then
+    cp -a ../centos .
+fi
 
 cat << EOF > ./fedora-kubeinit.repo
 [kubeinit]
 name=kubeinit
 baseurl=https://packages.kubeinit.org/fedora/$releasever/os/$basearch/
+enabled=1
+gpgcheck=0
+sslverify=0
+EOF
+
+cat << EOF > ./centos-kubeinit.repo
+[kubeinit]
+name=kubeinit
+baseurl=https://packages.kubeinit.org/centos/$releasever/os/$basearch/
 enabled=1
 gpgcheck=0
 sslverify=0
