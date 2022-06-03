@@ -15,7 +15,7 @@ yum:
   - createrepo
 
 apt:
-  - dpkg-dev
+  - dpkg-repack
 
 #
 # In the next items we add all the packages
@@ -24,14 +24,14 @@ apt:
 centos:
   - centos-release
 
+fedora:
+  - fedora-release
+
 debian:
   - debian-builder
 
 ubuntu:
-  - ubuntu-dev-tools
-
-fedora:
-  - fedora-release
+  - ubuntu-keyring
 
 #
 # Custom packages building
