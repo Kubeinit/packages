@@ -1,0 +1,32 @@
+Source: cri-o
+Section: devel
+Priority: optional
+Maintainer: Peter Hunt <haircommander@fedoraproject.org>
+Build-Depends: debhelper (>=9),
+    rsync,
+    libgpgme11-dev,
+    libseccomp-dev,
+    golang-1.18 | golang-1.18-go,
+    libglib2.0-dev,
+    go-md2man,
+    dh-golang,
+    git
+Standards-Version: 4.3.0
+Homepage: https://github.com/cri-o/cri-o
+Vcs-Git: https://gitlab.com/rhcontainerbot/cri-o
+Vcs-Browser: https://gitlab.com/rhcontainerbot/cri-o
+
+Package: cri-o
+Architecture: any
+Depends: ${misc:Depends},
+    libgpgme11,
+    libseccomp2,
+    conmon,
+    containers-common (>=0.1.27) | golang-github-containers-common,
+    tzdata,
+Suggests: cri-o-runc | runc (>=1.0.0),
+    containernetworking-plugins,
+Description: OCI-based implementation of Kubernetes Container Runtime Interface.
+Replaces: cri-o-1.21,
+   cri-o-1.20,
+   cri-o-1.19,

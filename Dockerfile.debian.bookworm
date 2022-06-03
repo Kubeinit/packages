@@ -1,23 +1,31 @@
 FROM debian:bookworm-slim as bookworm
+ARG DISTRO=debian
 ARG OS_VERSION=bookworm
 ARG ARCH=amd64
 ARG BUILD_TOOLS="jq curl dpkg-dev"
 
 RUN apt update -y -q && apt install -y $BUILD_TOOLS
 
-WORKDIR /debian/$OS_VERSION/os/$ARCH
-
 RUN curl -sL -o /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/v4.25.2/yq_linux_amd64 && chmod a+x /usr/local/bin/yq
 
-COPY packages.yaml packages.yaml
+WORKDIR /$DISTRO-tmp
 
-RUN yq eval packages.yaml -j | jq -r '.common[],.apt[],.debian[]' | sort -u > packages.list #  && dpkg --get-selections | grep -v deinstall | cut -f1 >> packages.list
+COPY * .
 
-RUN chown -R _apt /debian/$OS_VERSION/os/$ARCH \
-    && cat packages.list | xargs -L1 -I {} apt-cache depends --recurse --no-recommends --no-suggests \
-    --no-conflicts --no-breaks --no-replaces --no-enhances {}  | grep '^\w' | sort -u | xargs apt-get download
+RUN ./packager.sh
 
-RUN dpkg-scanpackages /debian/$OS_VERSION/os/$ARCH | gzip -9c > /debian/$OS_VERSION/os/$ARCH/Packages.gz
+WORKDIR /$DISTRO/$OS_VERSION/os/$ARCH
+
+RUN yq eval /$DISTRO-tmp/packages.yaml -j | jq -r '.common[],.apt[],.debian[]' | sort -u > packages.list #  && dpkg --get-selections | grep -v deinstall | cut -f1 >> packages.list
+
+# RUN chown -R _apt /$DISTRO/$OS_VERSION/os/$ARCH \
+#     && cat packages.list | xargs -L1 -I {} apt-cache depends --recurse --no-recommends --no-suggests \
+#     --no-conflicts --no-breaks --no-replaces --no-enhances {}  | grep '^\w' | sort -u | xargs apt-get download
+
+RUN chown -R _apt /$DISTRO/$OS_VERSION/os/$ARCH \
+    && cat packages.list | grep '^\w' | sort -u | xargs apt-get download
+
+RUN dpkg-scanpackages /$DISTRO/$OS_VERSION/os/$ARCH | gzip -9c > /$DISTRO/$OS_VERSION/os/$ARCH/Packages.gz
 
 FROM scratch
 

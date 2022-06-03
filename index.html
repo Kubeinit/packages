@@ -201,11 +201,11 @@
                <ul>
                   <li>Debian 11</li>
 <pre><code>
-sed -i '1s#^#deb [trusted=yes] https://packages.kubeinit.org/debian/bullseye/os/amd64 /\n#' /etc/apt/sources.list
+sed -i '1s;^;deb [trusted=yes] https://packages.kubeinit.org/debian/bullseye/os/amd64 /\n;' /etc/apt/sources.list
 </code></pre>
                   <li>Debian 12</li>
 <pre><code>
-sed -i '1s#^#deb [trusted=yes] https://packages.kubeinit.org/debian/bookworm/os/amd64 /\n#' /etc/apt/sources.list
+sed -i '1s;^;deb [trusted=yes] https://packages.kubeinit.org/debian/bookworm/os/amd64 /\n;' /etc/apt/sources.list
 </code></pre>
                </ul>
             </div>
@@ -221,11 +221,11 @@ sed -i '1s#^#deb [trusted=yes] https://packages.kubeinit.org/debian/bookworm/os/
                <ul>
                   <li>Ubuntu 20.04 focal</li>
 <pre><code>
-sed -i '1s#^#deb [trusted=yes] https://packages.kubeinit.org/ubuntu/focal/os/amd64 /\n#' /etc/apt/sources.list
+sed -i '1s;^;deb [trusted=yes] https://packages.kubeinit.org/ubuntu/focal/os/amd64 /\n;' /etc/apt/sources.list
 </code></pre>
                   <li>Ubuntu 22.04 Jammy</li>
 <pre><code>
-sed -i '1s#^#deb [trusted=yes] https://packages.kubeinit.org/ubuntu/jammy/os/amd64 /\n#' /etc/apt/sources.list
+sed -i '1s;^;deb [trusted=yes] https://packages.kubeinit.org/ubuntu/jammy/os/amd64 /\n;' /etc/apt/sources.list
 </code></pre>
                </ul>
             </div>

@@ -37,34 +37,38 @@ ubuntu:
 # Custom packages building
 #
 custom_packages:
-  - name: podman
-    type: binary
-    version: v4.1.0
-    url: https://github.com/containers/podman/archive/refs/tags/
-    file: v4.1.0.tar.gz
-  - name: buildah
-    type: source
-    version: v1.26.1
-    url: https://github.com/containers/buildah/archive/refs/tags/
-    file: v1.26.1.tar.gz
-  - name: skopeo
-    type: source
-    version: v1.8.0
-    url: https://github.com/containers/skopeo/archive/refs/tags/
-    file: v1.8.0.tar.gz
-  - name: cri-o
-    type: binary
-    version: v1.22.3
-    url: https://storage.googleapis.com/cri-o/artifacts/
-    file: cri-o.amd64.e06068142f46a70b30a4b1af3846dc05801e4295.tar.gz
-  # cri-o already comes with conmon, crictl, crio, crun
-  # - name: runc
-  #   type: source
-  #   version: v1.1.2
-  #   url: https://github.com/opencontainers/runc/archive/refs/tags/
-  #   file: v1.1.2.tar.gz
-  # - name: conmon
-  #   type: source
-  #   version: v2.1.1
-  #   url: https://github.com/containers/conmon/archive/refs/tags/
-  #   file: v2.1.1.tar.gz
+- name: podman
+  type: source
+  version: v4.1.0
+  url: https://github.com/containers/podman/archive/refs/tags/
+  file: v4.1.0.tar.gz
+  buildargs: 'containers_image_openpgp exclude_graphdriver_btrfs btrfs_noversion exclude_graphdriver_devicemapper selinux seccomp varlink'
+- name: buildah
+  type: source
+  version: v1.26.1
+  url: https://github.com/containers/buildah/archive/refs/tags/
+  file: v1.26.1.tar.gz
+  buildargs: ""
+- name: skopeo
+  type: source
+  version: v1.8.0
+  url: https://github.com/containers/skopeo/archive/refs/tags/
+  file: v1.8.0.tar.gz
+  buildargs: ""
+- name: cri-o
+  type: binary
+  version: v1.22.3
+  url: https://storage.googleapis.com/cri-o/artifacts/
+  file: cri-o.amd64.e06068142f46a70b30a4b1af3846dc05801e4295.tar.gz
+  buildargs: ""
+# cri-o already comes with conmon, crictl, crio, crun
+# - name: runc
+#   type: source
+#   version: v1.1.2
+#   url: https://github.com/opencontainers/runc/archive/refs/tags/
+#   file: v1.1.2.tar.gz
+# - name: conmon
+#   type: source
+#   version: v2.1.1
+#   url: https://github.com/containers/conmon/archive/refs/tags/
+#   file: v2.1.1.tar.gz

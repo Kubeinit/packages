@@ -1,17 +1,22 @@
 FROM quay.io/fedora/fedora:36 as fedora36
+ARG DISTRO=fedora
 ARG OS_VERSION=36
 ARG ARCH=x86_64
 ARG BUILD_TOOLS="jq findutils yum-utils createrepo"
 
 RUN yum update -y -q && yum install -y $BUILD_TOOLS && yum makecache
 
-WORKDIR /fedora/$OS_VERSION/os/$ARCH
-
 RUN curl -sL -o /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/v4.25.2/yq_linux_amd64 && chmod a+x /usr/local/bin/yq
 
-COPY packages.yaml packages.yaml
+WORKDIR /$DISTRO-tmp
 
-RUN yq eval packages.yaml -j | jq -r '.common[],.yum[],.fedora[]' | sort -u > packages.list #  && rpm -qa >> packages.list
+COPY * .
+
+RUN ./packager.sh
+
+WORKDIR /$DISTRO/$OS_VERSION/os/$ARCH
+
+RUN yq eval /$DISTRO-tmp/packages.yaml -j | jq -r '.common[],.yum[],.fedora[]' | sort -u > packages.list #  && rpm -qa >> packages.list
 
 RUN cat packages.list | xargs yumdownloader --resolve && createrepo -d .
 

@@ -1,0 +1,1743 @@
+cri-o (1.24.0~2) stable; urgency=medium
+
+  * use newer golang
+
+ -- Peter Hunt <haircommander@fedoraproject.org>  Mon, 23 May 2022 16:59:15 -0400
+
+cri-o (1.24.0~1) stable; urgency=medium
+
+  * use distro containers-common
+
+ -- Peter Hunt <haircommander@fedoraproject.org>  Mon, 23 May 2022 15:59:15 -0400
+
+cri-o (1.24.0~0) stable; urgency=medium
+
+  * bump to v1.24.0
+
+ -- Peter Hunt <haircommander@fedoraproject.org>  Fri, 13 May 2022 11:36:29 -0400
+
+cri-o (1.23.2~1) stable; urgency=medium
+
+  * bump version
+
+cri-o (1.23.2~0) stable; urgency=medium
+
+  * bump to v1.23.2
+
+cri-o (1.23.1~0) stable; urgency=medium
+
+  * bump to v1.23.1
+
+cri-o (1.23.0~0) stable; urgency=medium
+
+  * bump to v1.23.0
+
+cri-o (1.22.1~1) stable; urgency=medium
+
+  * update 1.22.1
+
+cri-o (1.22.1~0) stable; urgency=medium
+
+  * bump to v1.22.1
+
+cri-o (1.22.0~0) stable; urgency=medium
+
+  *  Bump to v1.22.0
+
+ -- Peter Hunt <haircommander@fedoraproject.org>  Fri, 17 Sep 2021 15:31:48 -0400
+
+cri-o (1.21.1~0) stable; urgency=medium
+
+  * bump to v1.21.1
+
+cri-o (1.21.0~0) stable; urgency=medium
+
+  * bump to v1.21.0
+
+cri-o (1.20.2~0) stable; urgency=medium
+
+  * bump to v1.20.2
+
+cri-o (1.20.1~0) stable; urgency=medium
+
+  * bump to v1.20.1
+
+cri-o (1.20.0~0) stable; urgency=medium
+
+  * bump to v1.20.0
+
+ -- Peter Hunt <haircommander@fedoraproject.org>  Fri, 12 Mar 2021 02:24:13 +0000
+
+cri-o (1.19.1~0) stable; urgency=medium
+
+  * bump to v1.19.1
+
+cri-o (1.19.0~0) stable; urgency=medium
+
+  * bump to v1.19.0
+
+cri-o (1.18.3~2) stable; urgency=medium
+
+  * allow build with custom Go binary 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 29 Jul 2020 11:12:35 +0000
+
+cri-o (1.18.3~1) stable; urgency=medium
+
+  * Non-maintainer upload.
+  * bump to v1.18.3 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 29 Jul 2020 02:24:13 +0000
+
+cri-o (1.18.2~1) stable; urgency=medium
+
+  * built v1.18.2 - build 1.18.2
+
+ -- Douglas Schilling Landgraf <dougsland@redhat.com>  Wed, 24 Jun 2020 08:39:00 +0000
+
+cri-o (1.18.0~3) stable; urgency=medium
+
+  * built v1.18.0 - previous build was not complete.
+
+ -- Douglas Schilling Landgraf <dougsland@redhat.com>  Sun, 03 May 2020 08:39:00 +0000
+
+cri-o (1.18.0~2) stable; urgency=medium
+
+  * built v1.18.0
+
+ -- Douglas Schilling Landgraf <dougsland@redhat.com>  Thu, 01 May 2020 13:34:00 +0000
+
+cri-o (1.18.0~1) stable; urgency=medium
+
+  * built v1.18.0-rc1
+
+ -- Douglas Schilling Landgraf <dougsland@redhat.com>  Thu, 30 Apr 2020 13:34:00 +0000
+
+cri-o-1.17 (1.17.3~1) stable; urgency=medium
+
+  * autobuilt v1.17.3
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Fri, 10 Apr 2020 18:01:45 +0000
+
+cri-o-1.17 (1.17.2~142) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 14:26:49 +0000
+
+cri-o-1.17 (1.17.2~141) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 14:21:39 +0000
+
+cri-o-1.17 (1.17.2~140) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 14:16:55 +0000
+
+cri-o-1.17 (1.17.2~139) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 14:11:49 +0000
+
+cri-o-1.17 (1.17.2~138) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 14:07:08 +0000
+
+cri-o-1.17 (1.17.2~137) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 14:01:33 +0000
+
+cri-o-1.17 (1.17.2~136) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:56:52 +0000
+
+cri-o-1.17 (1.17.2~135) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:51:58 +0000
+
+cri-o-1.17 (1.17.2~134) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:46:53 +0000
+
+cri-o-1.17 (1.17.2~133) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:41:34 +0000
+
+cri-o-1.17 (1.17.2~132) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:36:48 +0000
+
+cri-o-1.17 (1.17.2~131) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:31:42 +0000
+
+cri-o-1.17 (1.17.2~130) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:26:50 +0000
+
+cri-o-1.17 (1.17.2~129) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:21:43 +0000
+
+cri-o-1.17 (1.17.2~128) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:16:41 +0000
+
+cri-o-1.17 (1.17.2~127) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:11:45 +0000
+
+cri-o-1.17 (1.17.2~126) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:07:11 +0000
+
+cri-o-1.17 (1.17.2~125) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 13:02:03 +0000
+
+cri-o-1.17 (1.17.2~124) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:56:39 +0000
+
+cri-o-1.17 (1.17.2~123) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:51:56 +0000
+
+cri-o-1.17 (1.17.2~122) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:47:09 +0000
+
+cri-o-1.17 (1.17.2~121) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:41:34 +0000
+
+cri-o-1.17 (1.17.2~120) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:36:57 +0000
+
+cri-o-1.17 (1.17.2~119) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:31:48 +0000
+
+cri-o-1.17 (1.17.2~118) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:26:47 +0000
+
+cri-o-1.17 (1.17.2~117) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:21:43 +0000
+
+cri-o-1.17 (1.17.2~116) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:16:46 +0000
+
+cri-o-1.17 (1.17.2~115) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:11:55 +0000
+
+cri-o-1.17 (1.17.2~114) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:07:45 +0000
+
+cri-o-1.17 (1.17.2~113) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 12:01:42 +0000
+
+cri-o-1.17 (1.17.2~112) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:56:41 +0000
+
+cri-o-1.17 (1.17.2~111) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:51:49 +0000
+
+cri-o-1.17 (1.17.2~110) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:46:52 +0000
+
+cri-o-1.17 (1.17.2~109) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:41:33 +0000
+
+cri-o-1.17 (1.17.2~108) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:36:54 +0000
+
+cri-o-1.17 (1.17.2~107) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:31:45 +0000
+
+cri-o-1.17 (1.17.2~106) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:26:46 +0000
+
+cri-o-1.17 (1.17.2~105) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:21:44 +0000
+
+cri-o-1.17 (1.17.2~104) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:16:52 +0000
+
+cri-o-1.17 (1.17.2~103) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:11:44 +0000
+
+cri-o-1.17 (1.17.2~102) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:07:30 +0000
+
+cri-o-1.17 (1.17.2~101) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 11:01:48 +0000
+
+cri-o-1.17 (1.17.2~100) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:56:37 +0000
+
+cri-o-1.17 (1.17.2~99) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:51:43 +0000
+
+cri-o-1.17 (1.17.2~98) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:46:48 +0000
+
+cri-o-1.17 (1.17.2~97) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:41:40 +0000
+
+cri-o-1.17 (1.17.2~96) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:36:55 +0000
+
+cri-o-1.17 (1.17.2~95) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:31:48 +0000
+
+cri-o-1.17 (1.17.2~94) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:26:35 +0000
+
+cri-o-1.17 (1.17.2~93) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:21:50 +0000
+
+cri-o-1.17 (1.17.2~92) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:16:47 +0000
+
+cri-o-1.17 (1.17.2~91) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:11:43 +0000
+
+cri-o-1.17 (1.17.2~90) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:08:42 +0000
+
+cri-o-1.17 (1.17.2~89) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 10:01:38 +0000
+
+cri-o-1.17 (1.17.2~88) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:56:43 +0000
+
+cri-o-1.17 (1.17.2~87) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:52:10 +0000
+
+cri-o-1.17 (1.17.2~86) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:46:40 +0000
+
+cri-o-1.17 (1.17.2~85) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:41:39 +0000
+
+cri-o-1.17 (1.17.2~84) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:36:48 +0000
+
+cri-o-1.17 (1.17.2~83) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:31:40 +0000
+
+cri-o-1.17 (1.17.2~82) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:27:10 +0000
+
+cri-o-1.17 (1.17.2~81) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:21:40 +0000
+
+cri-o-1.17 (1.17.2~80) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:16:47 +0000
+
+cri-o-1.17 (1.17.2~79) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:11:38 +0000
+
+cri-o-1.17 (1.17.2~78) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:06:59 +0000
+
+cri-o-1.17 (1.17.2~77) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 09:01:36 +0000
+
+cri-o-1.17 (1.17.2~76) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:56:44 +0000
+
+cri-o-1.17 (1.17.2~75) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:51:43 +0000
+
+cri-o-1.17 (1.17.2~74) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:46:49 +0000
+
+cri-o-1.17 (1.17.2~73) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:41:41 +0000
+
+cri-o-1.17 (1.17.2~72) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:36:52 +0000
+
+cri-o-1.17 (1.17.2~71) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:31:44 +0000
+
+cri-o-1.17 (1.17.2~70) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:26:34 +0000
+
+cri-o-1.17 (1.17.2~69) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:21:35 +0000
+
+cri-o-1.17 (1.17.2~68) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:16:58 +0000
+
+cri-o-1.17 (1.17.2~67) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:11:44 +0000
+
+cri-o-1.17 (1.17.2~66) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:07:25 +0000
+
+cri-o-1.17 (1.17.2~65) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 08:01:42 +0000
+
+cri-o-1.17 (1.17.2~64) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:56:39 +0000
+
+cri-o-1.17 (1.17.2~63) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:51:37 +0000
+
+cri-o-1.17 (1.17.2~62) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:46:49 +0000
+
+cri-o-1.17 (1.17.2~61) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:41:34 +0000
+
+cri-o-1.17 (1.17.2~60) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:36:41 +0000
+
+cri-o-1.17 (1.17.2~59) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:31:31 +0000
+
+cri-o-1.17 (1.17.2~58) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:26:34 +0000
+
+cri-o-1.17 (1.17.2~57) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:21:34 +0000
+
+cri-o-1.17 (1.17.2~56) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:16:49 +0000
+
+cri-o-1.17 (1.17.2~55) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:11:39 +0000
+
+cri-o-1.17 (1.17.2~54) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:07:11 +0000
+
+cri-o-1.17 (1.17.2~53) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 07:01:33 +0000
+
+cri-o-1.17 (1.17.2~52) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:56:44 +0000
+
+cri-o-1.17 (1.17.2~51) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:51:31 +0000
+
+cri-o-1.17 (1.17.2~50) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:46:47 +0000
+
+cri-o-1.17 (1.17.2~49) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:41:30 +0000
+
+cri-o-1.17 (1.17.2~48) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:36:47 +0000
+
+cri-o-1.17 (1.17.2~47) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:31:31 +0000
+
+cri-o-1.17 (1.17.2~46) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:26:43 +0000
+
+cri-o-1.17 (1.17.2~45) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:21:30 +0000
+
+cri-o-1.17 (1.17.2~44) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:16:40 +0000
+
+cri-o-1.17 (1.17.2~43) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:11:40 +0000
+
+cri-o-1.17 (1.17.2~42) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:07:08 +0000
+
+cri-o-1.17 (1.17.2~41) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 06:01:44 +0000
+
+cri-o-1.17 (1.17.2~40) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:56:39 +0000
+
+cri-o-1.17 (1.17.2~39) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:51:42 +0000
+
+cri-o-1.17 (1.17.2~38) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:47:09 +0000
+
+cri-o-1.17 (1.17.2~37) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:41:45 +0000
+
+cri-o-1.17 (1.17.2~36) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:36:52 +0000
+
+cri-o-1.17 (1.17.2~35) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:31:39 +0000
+
+cri-o-1.17 (1.17.2~34) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:26:44 +0000
+
+cri-o-1.17 (1.17.2~33) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:21:39 +0000
+
+cri-o-1.17 (1.17.2~32) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:16:38 +0000
+
+cri-o-1.17 (1.17.2~31) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:11:40 +0000
+
+cri-o-1.17 (1.17.2~30) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:06:57 +0000
+
+cri-o-1.17 (1.17.2~29) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 05:01:34 +0000
+
+cri-o-1.17 (1.17.2~28) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 04:56:37 +0000
+
+cri-o-1.17 (1.17.2~27) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 04:51:40 +0000
+
+cri-o-1.17 (1.17.2~26) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 04:46:44 +0000
+
+cri-o-1.17 (1.17.2~25) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 04:41:27 +0000
+
+cri-o-1.17 (1.17.2~24) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 04:36:40 +0000
+
+cri-o-1.17 (1.17.2~23) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 04:31:39 +0000
+
+cri-o-1.17 (1.17.2~22) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 04:26:39 +0000
+
+cri-o-1.17 (1.17.2~21) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 04:21:39 +0000
+
+cri-o-1.17 (1.17.2~20) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 04:17:55 +0000
+
+cri-o-1.17 (1.17.2~19) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 04:01:41 +0000
+
+cri-o-1.17 (1.17.2~18) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:56:49 +0000
+
+cri-o-1.17 (1.17.2~17) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:51:33 +0000
+
+cri-o-1.17 (1.17.2~16) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:46:39 +0000
+
+cri-o-1.17 (1.17.2~15) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:41:32 +0000
+
+cri-o-1.17 (1.17.2~14) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:36:41 +0000
+
+cri-o-1.17 (1.17.2~13) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:31:35 +0000
+
+cri-o-1.17 (1.17.2~12) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:26:47 +0000
+
+cri-o-1.17 (1.17.2~11) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:21:38 +0000
+
+cri-o-1.17 (1.17.2~10) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:16:31 +0000
+
+cri-o-1.17 (1.17.2~9) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:11:39 +0000
+
+cri-o-1.17 (1.17.2~8) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:06:40 +0000
+
+cri-o-1.17 (1.17.2~7) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 03:01:35 +0000
+
+cri-o-1.17 (1.17.2~6) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 02:56:31 +0000
+
+cri-o-1.17 (1.17.2~5) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 02:51:41 +0000
+
+cri-o-1.17 (1.17.2~4) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 02:46:38 +0000
+
+cri-o-1.17 (1.17.2~3) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 02:41:35 +0000
+
+cri-o-1.17 (1.17.2~2) stable; urgency=medium
+
+  * autobuilt
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 01 Apr 2020 02:36:47 +0000
+
+cri-o-1.17 (1.17.2~1) stable; urgency=medium
+
+  * autobuilt v1.17.2
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Thu, 26 Mar 2020 16:10:53 +0000
+
+cri-o-1.17 (1.17.1~1) stable; urgency=medium
+
+  * autobuilt v1.17.1
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Mon, 16 Mar 2020 14:10:55 +0000
+
+cri-o-1.17 (1.17.0-3) stable; urgency=medium
+
+  * correct install dir 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 12 Feb 2020 14:25:08 -0500
+
+cri-o-1.17 (1.17.0-2) testing; urgency=medium
+
+  * autobuilt v1.17.0
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Fri, 07 Feb 2020 23:19:14 +0000
+
+cri-o-1.17 (1.17.0-1.1) testing; urgency=medium
+
+  * Non-maintainer upload.
+  * autobuilt v1.17.0-rc1
+
+ -- RH Container Bot <rhcontainerbot@fedoraproject.org>  Wed, 22 Jan 2020 12:07:50 +0000
+
+cri-o-1.17 (1.17.0-1) testing; urgency=medium
+
+  * built v1.17.0-rc1
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 20 Jan 2020 15:11:59 +0000
+
+cri-o-1.16 (1.16.1-1) stable; urgency=medium
+
+  * bump to v1.16.1
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Thu, 19 Dec 2019 20:58:52 +0000
+
+cri-o-1.15 (1.15.3-1~dev~ubuntu19.04~ppa4) disco; urgency=medium
+
+  * autobuilt 7c606df
+
+ -- RH Container Bot <rh.container.bot@gmail.com>  Wed, 09 Oct 2019 11:09:45 +0000
+
+cri-o-1.15 (1.15.3-1~dev~ubuntu19.04~ppa3) disco; urgency=medium
+
+  * autobuilt 7c606df
+
+ -- RH Container Bot <rh.container.bot@gmail.com>  Wed, 09 Oct 2019 10:55:33 +0000
+
+cri-o-1.15 (1.15.3-1~dev~ubuntu19.04~ppa2) disco; urgency=medium
+
+  * autobuilt 7c606df
+
+ -- RH Container Bot <rh.container.bot@gmail.com>  Mon, 07 Oct 2019 14:21:45 +0000
+
+cri-o-1.15 (1.15.3-1~dev~ubuntu19.04~ppa1) disco; urgency=medium
+
+  * bump to v1.15.3, autobuilt 6a84189
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 09 Sep 2019 19:26:18 +0000
+
+cri-o-1.15 (1.15.2-1~dev~ubuntu19.04~ppa7) disco; urgency=medium
+
+  * autobuilt 9e9091c
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 09 Sep 2019 17:28:02 +0000
+
+cri-o-1.15 (1.15.2-1~dev~ubuntu19.04~ppa6) disco; urgency=medium
+
+  * autobuilt 9fb0ba9
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 04 Sep 2019 22:24:02 +0000
+
+cri-o-1.15 (1.15.2-1~dev~ubuntu19.04~ppa5) disco; urgency=medium
+
+  * install /etc/default/crio 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 16 Aug 2019 19:43:41 +0000
+
+cri-o-1.15 (1.15.2-1~dev~ubuntu19.04~ppa4) disco; urgency=medium
+
+  * correct path for seccomp.json
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 16 Aug 2019 15:38:38 +0000
+
+cri-o-1.15 (1.15.2-1~dev~ubuntu19.04~ppa3) disco; urgency=medium
+
+  * use correct conmon location in crio.conf
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 16 Aug 2019 14:34:05 +0000
+
+cri-o-1.15 (1.15.2-1~dev~ubuntu19.04~ppa2) disco; urgency=medium
+
+  * correct crio-wipe in unitfile
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 16 Aug 2019 13:14:35 +0000
+
+cri-o-1.15 (1.15.2-1~dev~ubuntu19.04~ppa1) disco; urgency=medium
+
+  * bump to v1.15.2, autobuilt f5bd5ee
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Tue, 13 Aug 2019 16:27:43 +0000
+
+cri-o-1.15 (1.15.2-1~dev~ubuntu19.04~ppa1) disco; urgency=medium
+
+  * bump to v1.15.2, autobuilt b6a601f
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Tue, 13 Aug 2019 09:34:48 +0000
+
+cri-o-1.15 (1.15.1-1~dev~ubuntu19.04~ppa4) disco; urgency=medium
+
+  * build latest release-1.15 with crio-wipe 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 09 Aug 2019 18:14:24 +0000
+
+cri-o-1.15 (1.15.1-1~dev~ubuntu19.04~ppa3) disco; urgency=medium
+
+  * rebuild - bump release tag 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Sun, 28 Jul 2019 21:49:43 +0000
+
+cri-o-1.15 (1.15.1-1~dev~ubuntu19.04~ppa2) disco; urgency=medium
+
+  * correct release tag for disco
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Sun, 28 Jul 2019 20:03:04 +0000
+
+cri-o-1.15 (1.15.1-1~dev~ubuntu18.04~ppa1) bionic; urgency=medium
+
+  * bump to 1.15.1, autobuilt 7336eec
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Sat, 27 Jul 2019 23:44:54 +0000
+
+cri-o-1.15 (1.15.0-1~ubuntu18.04~ppa2) bionic; urgency=medium
+
+  * autobuilt 7336eec
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Sat, 27 Jul 2019 23:17:47 +0000
+
+cri-o-1.15 (1.15.0-1~ubuntu18.04~ppa1) bionic; urgency=medium
+
+  * bump to v1.15.0
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 16 Jul 2019 17:39:07 +0000
+
+cri-o-1.14 (1.14.7-3~ubuntu18.04~ppa1) bionic; urgency=medium
+
+  * use prebuilt crio.conf
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 16 Jul 2019 17:39:07 +0000
+
+cri-o-1.14 (1.14.7-1~dev~ubuntu18.04~ppa1) bionic; urgency=medium
+
+  * autobuilt 265ee2d
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 08 Jul 2019 12:38:46 +0000
+
+cri-o-1.14 (1.14.4-2~ubuntu18.04~ppa2) bionic; urgency=medium
+
+  * remove dev tag, release version built
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Thu, 20 Jun 2019 18:37:57 +0000
+
+cri-o-1.14 (1.14.4-1~dev~ubuntu18.04~ppa1) bionic; urgency=medium
+
+  * bump to v1.14.4
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Thu, 20 Jun 2019 18:29:49 +0000
+
+cri-o-1.13 (1.13.1-1~dev~ubuntu18.04~ppa1) bionic; urgency=medium
+
+  * autobuilt 1fecbd3
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 14 Jan 2019 06:52:14 -0500
+
+cri-o-1.12 (1.12.4-1~dev~ubuntu18.04~ppa2) bionic; urgency=medium
+
+  * enable registries in crio.conf
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Thu, 29 Nov 2018 10:52:14 -0500
+
+cri-o-1.12 (1.12.4-1~dev~ubuntu18.04~ppa1) bionic; urgency=medium
+
+  * bump to 1.12.4, autobuilt 5d023fd
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 28 Nov 2018 16:22:49 +0000
+
+cri-o-1.12 (1.12.3-1~dev~ubuntu18.04~ppa4) bionic; urgency=medium
+
+  * autobuilt e3bc956
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 26 Nov 2018 15:44:17 +0000
+
+cri-o-1.12 (1.12.3-1~dev~ubuntu18.04~ppa3) bionic; urgency=medium
+
+  * crio conf file changes
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 21 Nov 2018 15:33:38 -0500
+
+cri-o-1.12 (1.12.3-1~dev~ubuntu18.04~ppa2) bionic; urgency=medium
+
+  * correct ubuntu version in release tag
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 21 Nov 2018 15:25:59 -0500
+
+cri-o-1.12 (1.12.3-1~dev~ubuntu16.04.2~ppa1) bionic; urgency=medium
+
+  * bump to 1.12.3, autobuilt e3bc956
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 21 Nov 2018 20:21:28 +0000
+
+cri-o-1.12 (1.12.1-1~dev~ubuntu18.04~ppa3) bionic; urgency=medium
+
+  * depend on containers-common 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 05 Nov 2018 07:26:52 -0500
+
+cri-o-1.12 (1.12.1-1~dev~ubuntu18.04~ppa2) bionic; urgency=medium
+
+  * build with default golang 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Sun, 04 Nov 2018 15:30:57 -0500
+
+cri-o-1.12 (1.12.1-1~dev~ubuntu18.04~ppa1) bionic; urgency=medium
+
+  * built 81a5386
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Sun, 04 Nov 2018 14:57:18 -0500
+
+cri-o-1.12 (1.12.1-1~dev~ubuntu16.04.2~ppa4) xenial; urgency=medium
+
+  * autobuilt 81a5386
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Sat, 27 Oct 2018 03:13:20 +0000
+
+cri-o-1.12 (1.12.1-1~dev~ubuntu16.04.2~ppa3) xenial; urgency=medium
+
+  * autobuilt 6252747
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 24 Oct 2018 03:10:40 +0000
+
+cri-o-1.12 (1.12.1-1~dev~ubuntu16.04.2~ppa2) xenial; urgency=medium
+
+  * autobuilt f99d572
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Tue, 23 Oct 2018 03:10:25 +0000
+
+cri-o-1.12 (1.12.1-1~dev~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to 1.12.1, autobuilt 241e6ca
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Fri, 19 Oct 2018 03:08:23 +0000
+
+cri-o-1.12 (1.12.0-1~dev~ubuntu16.04.2~ppa4) xenial; urgency=medium
+
+  * autobuilt f90cdc4
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 17 Oct 2018 03:07:22 +0000
+
+cri-o-1.12 (1.12.0-1~dev~ubuntu16.04.2~ppa3) xenial; urgency=medium
+
+  * autobuilt 7c2e747
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Tue, 16 Oct 2018 03:07:00 +0000
+
+cri-o-1.12 (1.12.0-1~dev~ubuntu16.04.2~ppa2) xenial; urgency=medium
+
+  * autobuilt 2cbe48b
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Sun, 07 Oct 2018 02:59:23 +0000
+
+cri-o-1.12 (1.12.0-1~dev~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * built 2cbe48b
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Sat, 06 Oct 2018 22:46:54 -0400
+
+cri-o-1.11 (1.11.7-1~dev~ubuntu16.04.2~ppa2) xenial; urgency=medium
+
+  * build changes
+  * built 3d6cfc4
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Sat, 06 Oct 2018 22:27:06 -0400
+
+cri-o-1.11 (1.11.7-1~dev~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.11.7
+  * built 3d6cfc4
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Sat, 06 Oct 2018 00:13:45 -0400
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa18) xenial; urgency=medium
+
+  * autobuilt 3d6cfc4
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Sat, 29 Sep 2018 14:56:32 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa17) xenial; urgency=medium
+
+  * autobuilt 0a25eff
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Fri, 28 Sep 2018 14:56:19 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa16) xenial; urgency=medium
+
+  * autobuilt d373073
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Fri, 21 Sep 2018 14:53:34 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa15) xenial; urgency=medium
+
+  * autobuilt 498c028
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Thu, 20 Sep 2018 14:59:28 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa14) xenial; urgency=medium
+
+  * autobuilt 2fc80ec
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 19 Sep 2018 14:52:21 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa13) xenial; urgency=medium
+
+  * autobuilt c6048ad
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Fri, 14 Sep 2018 14:48:55 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa12) xenial; urgency=medium
+
+  * autobuilt 9a73292
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 12 Sep 2018 14:47:50 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa11) xenial; urgency=medium
+
+  * autobuilt 1a9742b
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Sat, 08 Sep 2018 14:44:08 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa10) xenial; urgency=medium
+
+  * autobuilt e5361d9
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 05 Sep 2018 14:42:14 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa9) xenial; urgency=medium
+
+  * autobuilt 22f794c
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Thu, 30 Aug 2018 14:38:53 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa8) xenial; urgency=medium
+
+  * autobuilt 3cd6d6c
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Fri, 17 Aug 2018 14:37:57 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa7) xenial; urgency=medium
+
+  * autobuilt 809e6a0
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Tue, 14 Aug 2018 14:33:50 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa6) xenial; urgency=medium
+
+  * autobuilt 02dd9bf
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 13 Aug 2018 14:33:29 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa5) xenial; urgency=medium
+
+  * autobuilt c799400
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Thu, 09 Aug 2018 14:31:26 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa4) xenial; urgency=medium
+
+  * autobuilt 45f20dd
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Thu, 02 Aug 2018 14:27:46 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa3) xenial; urgency=medium
+
+  * autobuilt c2ac331
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Fri, 27 Jul 2018 14:24:52 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa2) xenial; urgency=medium
+
+  * autobuilt 7d53bc2
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Tue, 24 Jul 2018 14:23:37 +0000
+
+cri-o-1.11 (1.11.2-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to 1.11.2, autobuilt cd1f68f
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 18 Jul 2018 14:46:53 +0000
+
+cri-o-1.11 (1.11.1-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * autobuilt 758f8f7
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 02 Jul 2018 10:42:49 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa29) xenial; urgency=medium
+
+  * autobuilt 040d528
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Sat, 09 Jun 2018 16:42:49 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa28) xenial; urgency=medium
+
+  * autobuilt 095e88c
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Thu, 10 May 2018 16:26:00 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa27) xenial; urgency=medium
+
+  * autobuilt 15b71d1
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 07 May 2018 16:22:46 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa26) xenial; urgency=medium
+
+  * autobuilt be9d77f
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Sat, 05 May 2018 16:21:38 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa25) xenial; urgency=medium
+
+  * autobuilt 2316123
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 18 Apr 2018 18:37:23 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa24) xenial; urgency=medium
+
+  * autobuilt 2316123
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Tue, 17 Apr 2018 16:11:46 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa23) xenial; urgency=medium
+
+  * autobuilt 2316123
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 16 Apr 2018 16:11:46 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa22) xenial; urgency=medium
+
+  * autobuilt 2316123
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 16 Apr 2018 12:08:03 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa21) xenial; urgency=medium
+
+  * autobuilt 2316123
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 16 Apr 2018 11:56:27 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa20) xenial; urgency=medium
+
+  * autobuilt 2316123
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 16 Apr 2018 11:46:50 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa19) xenial; urgency=medium
+
+  * autobuilt 2316123
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 16 Apr 2018 04:05:53 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa18) xenial; urgency=medium
+
+  * autobuilt 2316123
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 16 Apr 2018 03:58:17 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa17) xenial; urgency=medium
+
+  * autobuilt 2316123
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Mon, 16 Apr 2018 03:50:23 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa16) xenial; urgency=medium
+
+  * autobuilt 2316123
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Sun, 08 Apr 2018 16:05:59 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa15) xenial; urgency=medium
+
+  * autobuilt 2316123
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Sat, 07 Apr 2018 16:05:31 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa14) xenial; urgency=medium
+
+  * autobuilt 7891b6f
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Fri, 06 Apr 2018 16:06:45 +0000
+
+cri-o-1.10 (1.10.1-1~ubuntu16.04.2~ppa13) xenial; urgency=medium
+
+  * autobuilt 8e004c2
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Fri, 06 Apr 2018 13:06:21 +0000
+
+cri-o-1.10 (1.10.0-1~ubuntu16.04.2~ppa12) xenial; urgency=medium
+
+  * autobuilt 8e004c2
+
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Thu, 05 Apr 2018 13:20:50 +0000
+
+cri-o-1.10 (1.10.0-1~ubuntu16.04.2~ppa11) xenial; urgency=medium
+
+  * autobuilt daae2a5
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 23 Mar 2018 14:12:55 +0000
+
+cri-o-1.10 (1.10.0-1~ubuntu16.04.2~ppa10) xenial; urgency=medium
+
+  * autobuilt daae2a5
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Thu, 22 Mar 2018 11:59:48 +0000
+
+cri-o-1.10 (1.10.0-1~ubuntu16.04.2~ppa9) xenial; urgency=medium
+
+  * autobuilt daae2a5
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 21 Mar 2018 22:22:29 +0000
+
+cri-o-1.10 (1.10.0-1~ubuntu16.04.2~ppa8) xenial; urgency=medium
+
+  * auto rebuild
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 21 Mar 2018 22:03:05 +0000
+
+cri-o-1.10 (1.10.0-1~ubuntu16.04.2~ppa7) xenial; urgency=medium
+
+  * auto rebuild
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 21 Mar 2018 21:55:20 +0000
+
+cri-o-1.10 (1.10.0-1~ubuntu16.04.2~ppa6) xenial; urgency=medium
+
+  * auto rebuild
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 21 Mar 2018 21:54:27 +0000
+
+cri-o-1.10 (1.10.0-1~ubuntu16.04.2~ppa5) xenial; urgency=medium
+
+  * auto rebuild
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 20 Mar 2018 20:07:14 +0000
+
+cri-o-1.10 (1.10.0-1~ubuntu16.04.2~ppa4) xenial; urgency=medium
+
+  * auto rebuild
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 20 Mar 2018 20:04:26 +0000
+
+cri-o-1.10 (1.10.0-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to 1.10.0
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 20 Mar 2018 13:34:27 +0000
+
+cri-o-1.9 (1.9.10-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to 1.9.10
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 13 Mar 2018 13:34:27 +0000
+
+cri-o-1.9 (1.9.9-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to 1.9.9
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 09 Mar 2018 16:05:12 +0000
+
+cri-o-1.9 (1.9.8-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to 1.9.8
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 05 Mar 2018 16:02:01 +0000
+
+cri-o-1.9 (1.9.7-1~ubuntu16.04.2~ppa4) xenial; urgency=medium
+
+  * bump to 1.9.7
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 05 Mar 2018 15:50:52 +0000
+
+cri-o-1.9 (1.9.7-1~ubuntu16.04.2~ppa3) xenial; urgency=medium
+
+  * make sure distro mentioned and not UNRELEASE
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 27 Feb 2018 04:39:42 +0000
+cri-o-1.9 (1.9.7-1~ubuntu16.04.2~ppa2) xenial; urgency=medium
+
+  * correct packaging errors
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 27 Feb 2018 04:39:41 +0000
+
+cri-o-1.9 (1.9.7-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.9.7
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Sat, 24 Feb 2018 07:20:05 +0000
+
+cri-o-1.9 (1.9.5-1~ubuntu16.04.2~ppa4) xenial; urgency=medium
+
+  * bump to v1.9.5
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 16 Feb 2018 19:02:09 +0000
+
+cri-o-1.9.3 (1.9.3-1~ubuntu16.04.2~ppa3) xenial; urgency=medium
+
+  * correct rules and Architecture: any
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 13 Feb 2018 15:37:02 +0000
+
+cri-o-1.9.3 (1.9.3-1~ubuntu16.04.2~ppa2) xenial; urgency=medium
+
+  * bump to v1.9.3
+  * append version to package name
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 13 Feb 2018 14:46:28 +0000
+
+cri-o (1.9.2-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.9.2
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 09 Feb 2018 05:09:25 +0000
+
+cri-o (1.9.1-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.9.1 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Sun, 28 Jan 2018 16:17:39 +0000
+
+cri-o (1.9.0-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.9.0
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 18 Dec 2017 16:40:14 +0000
+
+cri-o (1.8.4-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.8.4
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 13 Dec 2017 02:09:27 +0000
+
+cri-o (1.8.1-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.8.1
+  * do not depend on ostree at all
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 28 Nov 2017 15:40:56 -0500
+
+cri-o (1.0.3-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.0.3
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 10 Nov 2017 09:50:05 -0500
+
+cri-o (1.0.2-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.0.2
+  * built commit 748bc46
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 31 Oct 2017 09:36:26 -0400
+
+cri-o (1.0.1-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.0.1
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Thu, 26 Oct 2017 10:42:31 -0400
+
+cri-o (1.0.0-release-5~ubuntu16.04.2~ppa5) xenial; urgency=medium
+
+  * bump to v1.0.0-release
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 16 Oct 2017 14:38:55 -0400
+
+cri-o (1.0.0-rc3-1~ubuntu16.04.2~ppa2) xenial; urgency=medium
+
+  * bump to v1.0.0-rc3 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 06 Oct 2017 06:27:30 -0400
+
+cri-o (1.0.0-rc2-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.0.0-rc2
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 22 Sep 2017 09:32:32 -0400
+
+cri-o (1.0.0-rc1-1~ubuntu16.04.2~ppa4) xenial; urgency=medium
+
+  * move containernetworking-plugins to Suggests as even Recommends tries to
+  install it and this conflicts with kubelet-cni 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 11 Sep 2017 16:08:20 -0400
+
+cri-o (1.0.0-rc1-1~ubuntu16.04.2~ppa3) xenial; urgency=medium
+
+  * containernetworking-plugins moved to Recommends in control file
+  * containernetworking-plugins conflicts with kubelet-cni, so this change
+  should hopefully resolve conflicts.
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 11 Sep 2017 15:13:43 -0400
+
+cri-o (1.0.0-rc1-1~ubuntu16.04.2~ppa2) xenial; urgency=medium
+
+  * bump to v1.0.0-rc1 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 11 Sep 2017 08:34:28 -0400
+
+cri-o (1.0.0-alpha.0.2-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * built commit a38419a
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 30 Aug 2017 08:54:47 -0400
+
+cri-o (1.0.0-alpha.0.1-1~ubuntu16.04.2~ppa4) xenial; urgency=medium
+
+  * install libostree-1-1 and not libostree at install time 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 28 Aug 2017 00:14:07 -0400
+
+cri-o (1.0.0-alpha.0.1-1~ubuntu16.04.2~ppa3) xenial; urgency=medium
+
+  * install libostree and skopeo at install time 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Sun, 27 Aug 2017 23:52:00 -0400
+
+cri-o (1.0.0-alpha.0.1-1~ubuntu16.04.2~ppa2) xenial; urgency=medium
+
+  * add git and libostree-dev to build deps
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 25 Aug 2017 18:33:28 -0400
+
+cri-o (1.0.0-alpha.0.1-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * include a ".1" after alpha.0, to get launchpad to shutup about tarball
+  names
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 25 Aug 2017 18:00:37 -0400
+
+cri-o (1.0.0-alpha.0-1~ubuntu16.04.2~ppa3) xenial; urgency=medium
+
+  * bump release tag to ppa3, previous build rejected (grrr) 
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 25 Aug 2017 17:53:20 -0400
+
+cri-o (1.0.0-alpha.0-1~ubuntu16.04.2~ppa2) xenial; urgency=medium
+
+  * built commit a38419a
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 25 Aug 2017 15:58:01 -0400
+
+cri-o (1.0.0-alpha.0-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * bump to v1.0.0.alpha
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Tue, 18 Jul 2017 15:59:14 -0400
+
+cri-o (0.3-1~ubuntu16.04.2~ppa1) xenial; urgency=medium
+
+  * Initial package for xenial
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Wed, 05 Jul 2017 09:47:46 -0400
