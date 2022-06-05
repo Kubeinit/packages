@@ -16,11 +16,11 @@
 # under the License.
 #
 
-FROM quay.io/centos/centos:stream8 as centos8
-ARG DISTRO=centos
-ARG OS_VERSION=8
+FROM quay.io/fedora/fedora:35 as fedora35
+ARG DISTRO=fedora
+ARG OS_VERSION=35
 ARG ARCH=x86_64
-ARG BUILD_TOOLS="jq yum-utils createrepo"
+ARG BUILD_TOOLS="jq findutils yum-utils createrepo"
 ARG DEST_PACKAGE_PATH="/root/rpmbuild/RPMS/x86_64"
 
 RUN yum update -y -q && yum install -y $BUILD_TOOLS && yum makecache
@@ -38,7 +38,7 @@ WORKDIR /$DISTRO/$OS_VERSION/os/$ARCH
 RUN mkdir -p $DEST_PACKAGE_PATH && cp -a $DEST_PACKAGE_PATH/* /$DISTRO/$OS_VERSION/os/$ARCH/
 RUN ls /$DISTRO/$OS_VERSION/os/$ARCH/*.rpm | xargs -L1 > packages_built.list
 
-RUN yq eval /$DISTRO-tmp/packages.yaml -j | jq -r '.common[],.yum[],.centos[]' | sort -u > packages.list #  && rpm -qa >> packages.list
+RUN yq eval /$DISTRO-tmp/packages.yaml -j | jq -r '.common[],.yum[],.fedora[]' | sort -u > packages.list #  && rpm -qa >> packages.list
 
 RUN cat packages.list | xargs yumdownloader --resolve
 RUN cat packages_built.list | rev | cut -d"/" -f1 | rev >> packages.list && rm packages_built.list
@@ -46,4 +46,4 @@ RUN createrepo -d .
 
 FROM scratch
 
-COPY --from=centos8 /centos /centos
+COPY --from=fedora35 /fedora /fedora

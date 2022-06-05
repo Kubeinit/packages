@@ -241,10 +241,10 @@ sed -i '1s;^;deb [trusted=yes] https://packages.kubeinit.org/ubuntu/jammy/os/amd
                <ul>
                   <li>CentOS Stream (8, 9)</li>
 <pre><code>
-cat << EOF > /etc/yum.repo.d/fedora-kubeinit.repo
+cat << EOF > /etc/yum.repo.d/centos-kubeinit.repo
 [kubeinit]
 name=kubeinit
-baseurl=https://packages.kubeinit.org/fedora/$releasever/os/$basearch/
+baseurl=https://packages.kubeinit.org/centos/$releasever/os/$basearch/
 enabled=1
 gpgcheck=0
 sslverify=0
@@ -262,12 +262,12 @@ EOF
             <div class="content">
                <p>Depending on your version, run:</p>
                <ul>
-                  <li>Fedora (34, 35)</li>
+                  <li>Fedora (35, 36)</li>
 <pre><code>
-cat << EOF > /etc/yum.repo.d/centos-kubeinit.repo
+cat << EOF > /etc/yum.repo.d/fedora-kubeinit.repo
 [kubeinit]
 name=kubeinit
-baseurl=https://packages.kubeinit.org/centos/$releasever/os/$basearch/
+baseurl=https://packages.kubeinit.org/fedora/$releasever/os/$basearch/
 enabled=1
 gpgcheck=0
 sslverify=0

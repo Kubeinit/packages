@@ -1,15 +1,15 @@
 # https://github.com/cri-o/cri-o
 %global goipath         github.com/cri-o/cri-o
-Version:                1.24.0
+Version:                1.22.4
 
 %if 0%{?rhel} && 0%{?rhel} <= 8
 %define gobuild(o:) %{expand:
   # https://bugzilla.redhat.com/show_bug.cgi?id=995136#c12
   %global _dwz_low_mem_die_limit 0
   %ifnarch ppc64
-  go build -buildmode pie -compiler gc -tags="rpm_crashtraceback ${BUILDTAGS:-}" -ldflags "${BASE_LDFLAGS:-}%{?currentgoldflags} -B 0x$(head -c20 /dev/urandom|od -An -tx1|tr -d ' \\n') -extldflags '%__global_ldflags %{?__golang_extldflags}' -compressdwarf=false" -a -v -x %{?**};
+  go build -buildmode pie -compiler gc -tags="rpm_crashtraceback ${BUILDTAGS:-}" -ldflags "${LDFLAGS:-}%{?currentgoldflags} -B 0x$(head -c20 /dev/urandom|od -An -tx1|tr -d ' \\n') -extldflags '%__global_ldflags %{?__golang_extldflags}' -compressdwarf=false" -a -v -x %{?**};
   %else
-  go build                -compiler gc -tags="rpm_crashtraceback ${BUILDTAGS:-}" -ldflags "${BASE_LDFLAGS:-}%{?currentgoldflags} -B 0x$(head -c20 /dev/urandom|od -An -tx1|tr -d ' \\n') -extldflags '%__global_ldflags %{?__golang_extldflags}' -compressdwarf=false" -a -v -x %{?**};
+  go build                -compiler gc -tags="rpm_crashtraceback ${BUILDTAGS:-}" -ldflags "${LDFLAGS:-}%{?currentgoldflags} -B 0x$(head -c20 /dev/urandom|od -An -tx1|tr -d ' \\n') -extldflags '%__global_ldflags %{?__golang_extldflags}' -compressdwarf=false" -a -v -x %{?**};
   %endif
 }
 %bcond_with check
@@ -33,7 +33,7 @@ Version:                1.24.0
 %global service_name crio
 
 # Commit for the builds
-%global commit0 0ba47c9b3e52eee95d898be84500c38c9fe032c9
+%global commit0 e06068142f46a70b30a4b1af3846dc05801e4295
 
 Name:           cri-o
 Epoch:          0
@@ -47,7 +47,7 @@ URL:            https://github.com/cri-o/cri-o
 Source0:        %url/archive/v%{version}/%{name}-%{version}.tar.gz
 
 %if 0%{?rhel}
-BuildRequires:  golang >= 1.18
+BuildRequires:  golang >= 1.16
 %endif
 %if 0%{?rhel} && 0%{?rhel} <= 8
 # e.g. el6 has ppc64 arch without gcc-go, so EA tag is required
@@ -79,11 +79,10 @@ Requires:       container-selinux
 Requires:       containers-common >= 1:0.1.31-14
 %if 0%{?rhel} && 0%{?rhel} < 8
 Requires:       runc >= 1.0.0-16
-Requires:       containernetworking-plugins >= 1.0.0-1
 %else
 Recommends:     runc >= 1.0.0-16
-Suggests:       containernetworking-plugins >= 1.0.0-1
 %endif
+Requires:       containernetworking-plugins >= 0.7.5-1
 Requires:       conmon >= 2.0.2-1
 Requires:       socat
 
@@ -120,7 +119,7 @@ $(hack/libdm_no_deferred_remove_tag.sh)
 $(hack/seccomp_tag.sh)
 $(hack/selinux_tag.sh)"
 
-export BASE_LDFLAGS="-X %{goipath}/internal/pkg/criocli.DefaultsPath=%{criocli_path}
+export LDFLAGS="-X %{goipath}/internal/pkg/criocli.DefaultsPath=%{criocli_path}
 -X  %{goipath}/internal/version.buildDate=%{build_timestamp}
 -X  %{goipath}/internal/version.gitCommit=%{commit0}
 -X  %{goipath}/internal/version.version=%{version}
@@ -226,23 +225,14 @@ sed -i -e 's/,metacopy=on//g' /etc/containers/storage.conf
 %endif
 
 %changelog
-* Wed May 11 2022 Peter Hunt <pehunt@redhat.com> - 0:1.24.0-1
-- bump to v1.24.0
+* Tue May 17 2022 Peter Hunt <pehunt@redhat.com> - 0:1.22.4-1
+- bump to v1.22.4
 
-* Tue Mar 15 2022 Peter Hunt <pehunt@redhat.com> - 0:1.23.2-1
-- bump to v1.23.2
+* Tue Mar 15 2022 Peter Hunt <pehunt@redhat.com> - 0:1.22.3-1
+- bump to v1.22.3
 
-* Tue Mar 15 2022 Peter Hunt <pehunt@redhat.com> - 0:1.23.2-1
-- bump to v1.23.2
-
-* Fri Feb 11 2022 Peter Hunt <pehunt@redhat.com> - 0:1.23.1-1
-- bump to v1.23.1
-
-* Fri Feb 11 2022 Peter Hunt <pehunt@redhat.com> - 0:1.23.1-1
-- bump to v1.23.1
-
-* Fri Dec 17 2021 Peter Hunt <pehunt@redhat.com> - 0:1.23.0-1
-- bump to v1.23.0
+* Fri Feb 25 2022 Peter Hunt <pehunt@redhat.com> - 0:1.22.2-1
+- bump to v1.22.2
 
 * Fri Dec 03 2021 Peter Hunt <pehunt@redhat.com> - 0:1.22.1-2
 - fix bogus date

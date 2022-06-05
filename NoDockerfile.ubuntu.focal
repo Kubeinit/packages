@@ -1,6 +1,24 @@
-FROM debian:bookworm-slim as bookworm
-ARG DISTRO=debian
-ARG OS_VERSION=bookworm
+#
+# Copyright KubeInit
+#
+# All Rights Reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+
+FROM ubuntu:focal as focal
+ARG DISTRO=ubuntu
+ARG OS_VERSION=focal
 ARG ARCH=amd64
 ARG BUILD_TOOLS="jq curl dpkg-dev"
 
@@ -16,7 +34,7 @@ RUN ./packager.sh
 
 WORKDIR /$DISTRO/$OS_VERSION/os/$ARCH
 
-RUN yq eval /$DISTRO-tmp/packages.yaml -j | jq -r '.common[],.apt[],.debian[]' | sort -u > packages.list #  && dpkg --get-selections | grep -v deinstall | cut -f1 >> packages.list
+RUN yq eval /$DISTRO-tmp/packages.yaml -j | jq -r '.common[],.apt[],.ubuntu[]' | sort -u > packages.list #  && dpkg --get-selections | grep -v deinstall | cut -f1 >> packages.list
 
 # Check this for resolving dependencies recursively, this increases the
 # files we add to the repo mirror
@@ -31,4 +49,4 @@ RUN dpkg-scanpackages /$DISTRO/$OS_VERSION/os/$ARCH | gzip -9c > /$DISTRO/$OS_VE
 
 FROM scratch
 
-COPY --from=bookworm /debian /debian
+COPY --from=focal /ubuntu /ubuntu
