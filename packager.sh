@@ -27,7 +27,8 @@ fi
 if [ -x "$(command -v yum)" ]; then
     yum makecache
     yum update -y
-    yum install -y gpgme \
+    yum install -y rpm-build \
+                   gpgme \
                    git \
                    pkgconfig \
                    libseccomp \
@@ -80,6 +81,12 @@ cat packages.yaml | shyaml get-value custom_packages | shyaml get-values-0 |
         if [ $type == "source" ]; then
             echo "Building from source"
             # BUILDTAGS=$buildargs make
+            if [[ -x "$(command -v yum)" ]] && [[ $name == "cri-o" ]]; then
+                echo "Building cri-o package"
+                cd package_helpers/cri-o
+                rpmbuild --target x86_64 -bb cri-o.spec
+            fi
+
         else
             echo "Packaging binary files"
         fi

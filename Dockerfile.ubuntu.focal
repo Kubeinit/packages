@@ -18,6 +18,8 @@ WORKDIR /$DISTRO/$OS_VERSION/os/$ARCH
 
 RUN yq eval /$DISTRO-tmp/packages.yaml -j | jq -r '.common[],.apt[],.ubuntu[]' | sort -u > packages.list #  && dpkg --get-selections | grep -v deinstall | cut -f1 >> packages.list
 
+# Check this for resolving dependencies recursively, this increases the
+# files we add to the repo mirror
 # RUN chown -R _apt /$DISTRO/$OS_VERSION/os/$ARCH \
 #     && cat packages.list | xargs -L1 -I {} apt-cache depends --recurse --no-recommends --no-suggests \
 #     --no-conflicts --no-breaks --no-replaces --no-enhances {}  | grep '^\w' | sort -u | xargs apt-get download
