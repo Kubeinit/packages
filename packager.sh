@@ -43,7 +43,7 @@ fi
 
 # Prepare YUM dependencies
 if [ -x "$(command -v yum)" ]; then
-    echo "Show repos"
+    echo "Show and enabling repos based on distros and versions..."
     dnf repolist all
     if [[ $DISTRO == "centos" ]]; then
       echo "Enable EPEL in CentOS"
@@ -83,27 +83,38 @@ if [ -x "$(command -v yum)" ]; then
                    gpgme-devel \
                    libassuan-devel \
                    systemd-rpm-macros \
-                   device-mapper-devel
+                   device-mapper-devel \
+                   bash-completion \
+                   containernetworking-plugins \
+                   fdupes \
+                   criu-devel \
+                   libcap-devel \
+                   libtool \
+                   yajl-devel \
+                   golang \
+                   gettext \
+                   protobuf \
+                   python3-libmount \
+                   libbpf-devel \
+                   protobuf-c-devel
 
     if [[ $DISTRO == "fedora" ]]; then
       echo "Installing Fedora specific dependencies"
-      yum install -y golang \
-                     go-rpm-macros \
+      yum install -y go-rpm-macros \
                      golang-github-cpuguy83-md2man \
                      btrfs-progs-devel
 
     else
       echo "Installing CentOS specific dependencies"
-      yum install -y golang \
-                     golang-github-cpuguy83-md2man
+      yum install -y golang-github-cpuguy83-md2man
 
-                     if [[ $OS_VERSION == "9" ]]; then
-                       echo "Install things in centos stream9"
-                       yum install -y go-rpm-macros
-                     else
-                       echo "Install things in centos stream8"
-                       yum install -y go-srpm-macros
-                     fi
+     if [[ $OS_VERSION == "9" ]]; then
+       echo "Install things in centos stream9"
+       yum install -y go-rpm-macros
+     else
+       echo "Install things in centos stream8"
+       yum install -y go-srpm-macros
+     fi
 
     fi
 fi
@@ -139,11 +150,27 @@ cat packages.yaml | shyaml get-value custom_packages | shyaml get-values-0 |
         # mkdir -p ./$name
         # tar -xzf $file -C ./$name
         # cd ./$name/$(ls -U ./$name/ | head -1)
+        # BUILDTAGS=$buildargs make
 
         if [[ $type == "source" ]]; then
             if [[ -x "$(command -v yum)" ]]; then
                 echo "Building .rpm based packages from source"
-                # BUILDTAGS=$buildargs make
+                mkdir -p ~/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
+
+                if [[ $name == "crun" ]]; then
+                    echo "Building crun rpm packages"
+                    echo "    Path:"
+                    pwd
+                    echo "    Files:"
+                    ls -ltah
+                    cd /$DISTRO-tmp/crun
+                    wget -nc https://github.com/containers/crun/archive/refs/tags/1.4.4.tar.gz -P ~/rpmbuild/SOURCES/
+                    mv ~/rpmbuild/SOURCES/1.4.4.tar.gz ~/rpmbuild/SOURCES/crun-1.4.4.tar.gz
+                    rpmbuild --target x86_64 -bb crun.spec
+                    echo "    New files:"
+                    ls -ltah
+                fi
+
                 if [[ $name == "cri-o" ]]; then
                     echo "Building cri-o rpm packages"
                     echo "    Path:"
@@ -151,11 +178,38 @@ cat packages.yaml | shyaml get-value custom_packages | shyaml get-values-0 |
                     echo "    Files:"
                     ls -ltah
                     cd /$DISTRO-tmp/cri-o
-                    mkdir -p ~/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
-                    # rpmdev-setuptree /root/
                     wget -nc https://github.com/cri-o/cri-o/archive/v1.22.4.tar.gz -P ~/rpmbuild/SOURCES/
                     mv ~/rpmbuild/SOURCES/v1.22.4.tar.gz ~/rpmbuild/SOURCES/cri-o-1.22.4.tar.gz
-                    rpmbuild --target x86_64 -bb cri-o.spec
+                    # rpmbuild --target x86_64 -bb cri-o.spec
+                    echo "    New files:"
+                    ls -ltah
+                fi
+
+                if [[ $name == "cni" ]]; then
+                    echo "Building cni rpm packages"
+                    echo "    Path:"
+                    pwd
+                    echo "    Files:"
+                    ls -ltah
+                    cd /$DISTRO-tmp/cni
+                    wget -nc https://github.com/containernetworking/cni/archive/refs/tags/v1.0.1.tar.gz -P ~/rpmbuild/SOURCES/
+                    mv ~/rpmbuild/SOURCES/v1.0.1.tar.gz ~/rpmbuild/SOURCES/cni-v1.0.1.tar.gz
+                    # rpmbuild --target x86_64 -bb cni.spec
+                    echo "    New files:"
+                    ls -ltah
+                fi
+
+                if [[ $name == "podman" ]]; then
+                    echo "Building podman rpm packages"
+                    echo "    Path:"
+                    pwd
+                    echo "    Files:"
+                    ls -ltah
+                    cd /$DISTRO-tmp/podman
+                    # rpmdev-setuptree /root/
+                    wget -nc https://github.com/containers/podman/archive/refs/tags/v4.0.3.tar.gz -P ~/rpmbuild/SOURCES/
+                    mv ~/rpmbuild/SOURCES/v4.0.3.tar.gz ~/rpmbuild/SOURCES/podman-4.0.3.tar.gz
+                    # rpmbuild --target x86_64 -bb podman.spec
                     echo "    New files:"
                     ls -ltah
                 fi

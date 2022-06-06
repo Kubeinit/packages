@@ -53,12 +53,36 @@ ubuntu:
 # Custom packages building
 #
 custom_packages:
+- name: crun
+  type: source
+  version: v1.22.4
+  url: https://github.com/containers/podman/archive/refs/tags/
+  file: v1.22.4.tar.gz
+  buildargs: ""
+- name: cri-o
+  type: source
+  version: v1.22.4
+  url: https://github.com/containers/podman/archive/refs/tags/
+  file: v1.22.4.tar.gz
+  buildargs: ""
+- name: crun
+  type: source
+  version: v1.22.4
+  url: https://github.com/containers/podman/archive/refs/tags/
+  file: v1.22.4.tar.gz
+  buildargs: ""
+- name: cni
+  type: source
+  version: v1.0.1
+  url: https://github.com/containernetworking/cni/archive/refs/tags/
+  file: v1.0.1.tar.gz
+  buildargs: ""
 - name: podman
   type: source
-  version: v4.1.0
+  version: v4.0.3
   url: https://github.com/containers/podman/archive/refs/tags/
-  file: v4.1.0.tar.gz
-  buildargs: 'containers_image_openpgp exclude_graphdriver_btrfs btrfs_noversion exclude_graphdriver_devicemapper selinux seccomp varlink'
+  file: v4.0.3.tar.gz
+  buildargs: ""
 - name: buildah
   type: source
   version: v1.26.1
@@ -71,13 +95,7 @@ custom_packages:
   url: https://github.com/containers/skopeo/archive/refs/tags/
   file: v1.8.0.tar.gz
   buildargs: ""
-- name: cri-o
-  # type: binary
-  type: source
-  version: v1.22.3
-  url: https://storage.googleapis.com/cri-o/artifacts/
-  file: cri-o.amd64.e06068142f46a70b30a4b1af3846dc05801e4295.tar.gz
-  buildargs: ""
+
 # cri-o already comes with conmon, crictl, crio, crun
 # - name: runc
 #   type: source
